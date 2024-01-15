@@ -1,0 +1,348 @@
+button {
+  background-color: #8355D0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*a {
+  text-decoration: none;
+}*/
+
+/* Style pour le conteneur principal */
+.conteneur-principal {
+  display: flex;
+  justify-content: center;
+  /*align-items: center;
+  height: 100vh;*/
+  /* Utilise toute la hauteur de la fenêtre */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Style pour le formulaire lui-même */
+.formulaire-connexion {
+  width: 300px;
+  /* Largeur du formulaire */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Ombre optionnelle pour le formulaire */
+  border-radius: 8px;
+  background-color: white;
+}
+
+/* Assurez-vous que les éléments du formulaire sont bien alignés */
+.formulaire-connexion input,
+.formulaire-connexion button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Style général pour les inputs */
+.formulaire-connexion input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* Bordure grise légère */
+  border-radius: 4px;
+  /* Coins arrondis */
+  box-sizing: border-box;
+  /* Pour que le padding ne modifie pas la largeur */
+}
+
+/* Style pour les inputs lorsqu'ils sont en focus */
+.formulaire-connexion input:focus {
+  outline: none;
+  /* Supprimer l'outline par défaut */
+  border-color: #8355D0;
+  /* Couleur de la bordure lors du focus */
+  box-shadow: 0 0 5px rgba(131, 85, 208, 0.5);
+  /* Ombre subtile lors du focus */
+}
+
+/* Style pour les boutons de soumission */
+.formulaire-connexion button {
+  background-color: #8355D0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style pour le bouton de soumission lors du survol */
+.formulaire-connexion button:hover {
+  background-color: #6e44b8;
+}
+
+.containerButtonAdmin,
+.spanAdmin {
+  display: flex;
+  justify-content: center;
+}
+
+.spanAdmin {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+/* Style pour centrer le texte de connexion */
+.nom-personne {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  /* Taille de la police, ajustez selon vos besoins */
+  color: #333;
+  /* Couleur du texte */
+}
+
+/* Style spécifique pour le formulaire de contact */
+#formulaireContact {
+  width: 500px;
+  /* Largeur adaptée pour le formulaire de contact */
+  margin: auto;
+  /* Centrer le formulaire dans la page */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+}
+
+/* Réutilisation des styles pour les inputs et le bouton du formulaire de connexion */
+#formulaireContact input,
+#formulaireContact textarea,
+#formulaireContact button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#formulaireContact input,
+#formulaireContact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+legend {
+  margin-bottom: 10px;
+}
+
+#formulaireContact input:focus,
+#formulaireContact textarea:focus {
+  outline: none;
+  border-color: #8355D0;
+  box-shadow: 0 0 5px rgba(131, 85, 208, 0.5);
+}
+
+#formulaireContact button:hover {
+  background-color: #6e44b8;
+}
+
+/* Style pour la zone de texte (textarea) */
+#formulaireContact textarea {
+  resize: vertical;
+  /* Permettre le redimensionnement vertical uniquement */
+}
+
+/* Style pour la liste des plats */
+#listePlat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* Espacement entre les plats */
+}
+
+/* Style pour chaque plat */
+.Plat {
+  border: 3px solid #a27de3;
+  /* Bordure violette */
+  padding: 20px;
+  border-radius: 8px;
+  /* Coins arrondis pour l'esthétique */
+  width: 300px;
+  /* Largeur fixe pour chaque plat */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Ombre subtile */
+  margin-bottom: 20px;
+  /* Espacement en bas de chaque plat */
+  text-align: center;
+  /*Centre le texte de chaque plat */
+}
+
+/* Style pour les sections sur la page d'accueil */
+.section {
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  width: 80%;
+  /* ou une largeur spécifique si nécessaire */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style de base pour les NavLink */
+.navigation a {
+  color: #333;
+  /* Couleur de texte normale */
+  text-decoration: none;
+  /* Pas de soulignement */
+  padding: 10px;
+  /* Espacement autour du texte */
+  border-radius: 5px;
+  /* Coins arrondis */
+}
+
+/* Style pour les NavLink au survol */
+.navigation a:hover {
+  background-color: #8355D0;
+  /* Couleur de fond au survol */
+  color: white;
+  /* Couleur du texte au survol */
+}
+
+/* Style pour le NavLink actif */
+.navigation .active {
+  background-color: #6e44b8;
+  /* Couleur de fond pour l'élément actif */
+  color: white;
+  /* Couleur du texte pour l'élément actif */
+}
+
+/* Style pour la page de mentions légales */
+.page-mentions-legales {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.page-mentions-legales h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style pour la page de politique de confidentialité */
+.page-politique-confidentialite {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.page-politique-confidentialite h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style pour les conteneurs de texte */
+.text-container {
+  background-color: white;
+  /* Couleur de fond */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Ombre portée */
+  margin-bottom: 20px;
+  /* Espacement entre les conteneurs */
+  padding: 15px;
+  /* Espacement à l'intérieur des conteneurs */
+  border-radius: 8px;
+  /* Coins arrondis */
+}
+
+.text-container p {
+  padding: 10px;
+  /* Léger espacement entre les paragraphes */
+  text-align: justify;
+}
+
+.choixRegime {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.connexionOuInscription {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.pasDeCompte {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #6e44b8;
+}
+
+.Plat p {
+  color: black;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Fond semi-transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Valeur de z-index pour empêcher d'autres éléments de s'afficher par-dessus */
+}
+
+/* Styles pour la fenêtre contextuelle */
+.modal-content {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 400px;
+  /* Largeur de la fenêtre contextuelle */
+}
+
+/* Styles pour le formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles pour les champs d'entrée */
+label {
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+/* Styles pour le bouton "Ajouter" en bas */
+.add-button {
+  margin-top: auto;
+  /* Le bouton sera en bas de la fenêtre contextuelle */
+}
